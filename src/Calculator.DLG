@@ -1,0 +1,30 @@
+#include "OS2.H"
+
+DLGTEMPLATE 100 LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG "Calculator", 100, 120, 104, 221, 125,
+           WS_SYNCPAINT | NOT FS_DLGBORDER | FS_SIZEBORDER | WS_VISIBLE,
+           FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        ENTRYFIELD      "0", 107, 12, 105, 136, 10,
+                        WS_GROUP | ES_RIGHT | ES_MARGIN | ES_READONLY
+        PUSHBUTTON      "C", 104, 167, 105, 40, 10
+        PUSHBUTTON      "drop", 119, 108, 88, 40, 9
+        PUSHBUTTON      "enter", 105, 167, 88, 40, 9
+        PUSHBUTTON      "7", 115, 12, 71, 40, 9
+        PUSHBUTTON      "8", 114, 60, 71, 40, 9
+        PUSHBUTTON      "9", 113, 108, 71, 40, 9
+        PUSHBUTTON      "+", 106, 167, 71, 40, 9
+        PUSHBUTTON      "4", 112, 12, 53, 40, 9
+        PUSHBUTTON      "5", 111, 60, 53, 40, 9
+        PUSHBUTTON      "6", 110, 108, 53, 40, 9
+        PUSHBUTTON      "-", 116, 167, 52, 40, 10
+        PUSHBUTTON      "1", 101, 12, 35, 40, 9
+        PUSHBUTTON      "2", 102, 60, 35, 40, 9
+        PUSHBUTTON      "3", 103, 108, 35, 40, 9
+        PUSHBUTTON      "/", 117, 167, 34, 40, 9
+        PUSHBUTTON      "0", 108, 12, 16, 40, 10
+        PUSHBUTTON      ".", 109, 60, 16, 40, 10
+        PUSHBUTTON      "*", 118, 167, 16, 40, 9
+    END
+END
